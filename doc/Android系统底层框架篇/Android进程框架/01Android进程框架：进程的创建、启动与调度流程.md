@@ -27,7 +27,7 @@ Kernel层
 Native层
 
 5. 接着会启动init进程，init进程是所有用户进程的鼻祖，它会接着孵化出ueventd、logd、healthd、installd、adbd、lmkd等用户守护进程，启动ServiceManager来管理系统
-服务，启动Bootnaim开机动画。
+服务，启动Bootanim开机动画。
 6. init进程通过解析init.rc文件fork生成Zygote进程，该进程是Android系统第一个Java进程，它是所有Java进程父进程，该进程主要完成了加载ZygoteInit类，注册Zygote Socket
 服务套接字；加载虚拟机；预加载Class；预加载Resources。
 
